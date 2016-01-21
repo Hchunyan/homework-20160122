@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<style>
+*{margin:0;padding:0; list-style:none;}
+a{ text-decoration:none;}
+html{font-size:20px;}
+.box{width:100%;}
+i{ font-style:normal;}
+
+header{width:16rem; height:2.450rem; background:-webkit-linear-gradient(#fff,#ebebeb); position:relative; top:0; left:0; text-align:center; padding-top:0.175rem;}
+header .back{ position:absolute; top:0.55rem; left:0.55rem; width:3.05rem; height:1.45rem; background:url(img/btn_back.png) no-repeat; background-size:100%; text-indent:-999999px;}
+header img{width:9.4rem; height:2.2rem;}
+.banner{width:16rem; height:7.45rem; position:relative; top:0; left:0; overflow:hidden;}
+.banner ul{position:absolute; top:0; left:0;}
+.banner ul li{width:16rem; height:6.675rem; float:left;}
+.banner ul li img{width:100%;}
+.banner ol{position:absolute; left:50%; bottom:0; width:2.5rem; margin-left:-1.25rem;}
+.banner ol li{width:0.25rem; height:0.25rem; margin:0 0.125rem; background:#a9a9a9; border-radius:50%; float:left; text-indent:-99999px;}
+.banner ol li.active{background:#ff4300;}
+.navigation{ position:relative; top:0; left:0;}
+.navigation ul{ width:16.4rem; height:4rem; position:absolute; left:50%; top:1rem; margin-left:-8.2rem;display:-webkit-flex; display:flex;}
+.navigation ul li{ width:80px; height:120px;text-align:center;-webkit-flex:1; flex:1;}
+.navigation ul li p{ font-size:0.6rem; color:#b6b6b6; line-height:0.6px; text-align:center; margin-top:0.4rem;}
+.navigation2{ position:relative; top:0; left:0;}
+.navigation2 ul{ width:16.4rem; height:4rem; position:absolute; left:50%; top:4rem; margin-left:-8.2rem;display:-webkit-flex; display:flex;}
+.navigation2 ul li{ width:80px; height:120px;text-align:center;-webkit-flex:1; flex:1;}
+.navigation2 ul li p{ font-size:0.6rem; color:#b6b6b6; line-height:0.6px; text-align:center; margin-top:0.4rem;}
+.hot{ position:relative; top:0; left:0;}
+.hot .hot-box{ position:absolute; top:7rem; left:50%; width:15rem; margin-left:-7.5rem;}
+.hot .hot-box div{display:-webkit-flex; display:flex; height:1.2rem;width:15rem; border-bottom:0.1rem solid #ccc; margin-top:0.5rem;}
+.hot .hot-box div b{ background:url(img/red.png) no-repeat center; width:0.075rem; height:0.75rem;-webkit-flex:1; flex:0.02;}
+.hot .hot-box div p,span{font-size:0.6rem;}
+.hot .hot-box div p{-webkit-flex:1; flex:0.82; text-align:left;}
+.hot .hot-box div span{-webkit-flex:1; flex:0.16; text-align:right;}
+.hot-center{ position:absolute; top:8.8rem; left:50%; width:15rem; height:3rem; margin-left:-7.5rem; background:#f4f4f4; margin-top:0.75rem;}
+.matter1{display:-webkit-flex; display:flex;width:15rem; height:3rem; margin-bottom:0.5rem;background:#f4f4f4;}
+.matter1 .matter-left{-webkit-flex:1; flex:0.44;}
+.matter1 .middle{-webkit-flex:1; flex:0.37;}
+.matter1 div span{ width:1.5rem; height:3rem ; background:#e00202; float:left; font-size:0.95rem; text-align:center; line-height:3rem; color:#FFF}
+.matter1 div img{ width:4.5rem; height:3rem;}
+.middle{ background:#f4f4f4;}
+.middle p{ font-size:0.55rem; line-height:1.5rem; color:#999999;}
+.middle i{ font-size:0.5rem; float:right; text-align:center; line-height:1.5rem; text-decoration:line-through; color:#999999;}
+.matter-right{-webkit-flex:1; flex:0.19; line-height:3rem; text-align:center;}
+.matter-right p{ color:#F00;background:#f4f4f4;}
+.matter-right b{ background:url(img/ico.png) no-repeat center; width:0.35rem; height:0.55rem; padding-left:0.35rem;}
+
+.sptuan{ position:relative; top:44.5rem; left:50%; margin-left:-7.5rem; width:15rem;height:8.85rem; margin-bottom:0.5rem;}
+.sptuan .sp-top{ width:15rem; height:2rem; background:#f5f5f5; font-size:0.7rem; text-align:center; line-height:2rem; color:#737373; margin-bottom:0.5rem;}
+.ps-center{display:-webkit-flex; display:flex;width:15rem; height:8.85rem;}
+.ps-center img{-webkit-flex:1; flex:0.25; width:3.75rem; height:8.85rem;}
+.ps-center div{-webkit-flex:1; flex:0.75; width:11.25rem; height:8.85rem;}
+.ps-center div ul{display:-webkit-flex; display:flex;width:11.25rem;}
+.ps-center ul li{-webkit-flex:1; flex:0.333; border:0.025rem solid #eeeeee;width:3.75rem;  box-sizing:border-box;height:2.2125rem; border-bottom:none; border-left:none; text-align:center; line-height:2.2125rem; color:#b4b4b4; font-size:0.65rem;}
+div .underneath li{ border-bottom:0.025rem solid #eeeeee; box-sizing:border-box;}
+
+.shtuan2,.shtuan3,.shtuan{ position: relative; top:0; left:0; }
+.shtuan .location{ position:absolute; top:47rem;left:50%; margin-left:-7.5rem; width:15rem;}
+.shtuan .location .sp-top{width:15rem; height:2rem; background:#f5f5f5; font-size:0.7rem; text-align:center; line-height:2rem; color:#737373; margin-bottom:0.5rem;}
+.shtuan .location .sp-top b{background:url(img/ico.png) no-repeat center; width:0.35rem; height:0.55rem; padding-left:0.35rem;}
+
+.shtuan2 .location{ position:absolute; top:58.80rem;left:50%; margin-left:-7.5rem; width:15rem;}
+.shtuan2 .location .sp-top{width:15rem; height:2rem; background:#f5f5f5; font-size:0.7rem; text-align:center; line-height:2rem; color:#737373; margin-bottom:0.5rem;}
+.shtuan2 .location .sp-top b{background:url(img/ico.png) no-repeat center; width:0.35rem; height:0.55rem; padding-left:0.35rem;}
+
+.shtuan3 .location{ position:absolute; top:70.6rem;left:50%; margin-left:-7.5rem; width:15rem;}
+.shtuan3 .location .sp-top{width:15rem; height:2rem; background:#f5f5f5; font-size:0.7rem; text-align:center; line-height:2rem; color:#737373; margin-bottom:0.5rem;}
+.shtuan3 .location .sp-top b{background:url(img/ico.png) no-repeat center; width:0.35rem; height:0.55rem; padding-left:0.35rem;}
+.opinion div ul{display:-webkit-flex; display:flex; width:15rem; height:4rem;}
+.opinion div ul li{-webkit-flex:1; flex:0.333;width:5rem ; height:4rem; text-align:center; border:0.025rem solid #eeeeee; line-height:3rem;}
+.opinion div ul li p{ font-size:0.6rem; color:#a7a7a7; line-height:0.6px; text-align:center;}
+
+.foot{ position:relative; top:77.5rem; left:50%; margin-left:-7.5rem; width:15rem;}
+.foot .foot-top{ position:absolute; left:0.5rem; left:0;width:15rem; height:2rem; background:#f5f5f5; font-size:0.7rem; text-align:left; line-height:2rem; color:#333333;}
+.foot .foot-top b{ text-align:right;background:url(img/sj.png) no-repeat center; width:0.35rem; height:0.55rem; padding-right:1.5rem; margin-left:8rem;}
+.foot-bottom{ position:absolute; top:2rem; left:0; background:#eeeeee;}
+.foot-bottom p{ width:15rem; height:1.825rem; text-align:center; line-height:1.825rem; font-size:0.7rem;}
+.foot-bottom p.foot-color{ font-size:0.5rem; color:#999999;}
+.foot-bottom div{ width:15rem; text-align:center;}
+</style> 
+<script>
+window.onload=window.onresize=function(){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth*20/320+'px';
+	var oUl = document.querySelector('.banner ul');
+	var aLi = oUl.children;
+	oUl.style.width = aLi.length*aLi[0].offsetWidth/20+'rem';
+};
+</script>
+</head>
+
+<body>
+<div class="box">
+	<header>
+		<a href="javascript:;" class="back">返回</a>
+		<img src="img/header_bg.png" alt="聚划算" />
+	</header>
+	<section class="banner">
+		<ul>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+		</ul>
+		<ol>
+			<li class="active">0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ol>
+	</section>
+	<nav class="navigation">
+    	<ul>
+        	<li>
+            	<a href="javascript:;"><img src="img/nav1.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>商品</p></a>
+            </li>
+            <li>
+            	<a href="javascript:;"><img src="img/nav2.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>生活</p></a>
+            </li>
+            <li>
+            	<a href="javascript:;"><img src="img/nav3.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>品牌</p></a>
+            </li>
+            <li>
+            	<a href="javascript:;"><img src="img/nav4.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>聚宝盆</p></a>
+            </li>
+        </ul>
+    </nav>
+	<nav class="navigation2">
+    	<ul>
+        	<li>
+            	<a href="javascript:;"><img src="img/nav5.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>聚名品</p></a>
+            </li>
+            <li>
+            	<a href="javascript:;"><img src="img/nav6.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>聚家具</p></a>
+            </li>
+            <li>
+            	<a href="javascript:;"><img src="img/nav7.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>聚透</p></a>
+            </li>
+            <li>
+            	<a href="javascript:;"><img src="img/nav8.png" width="80" height="80" alt=""/></a>
+                <a href="javascript:;"><p>客户端</p></a>
+            </li>
+        </ul>
+    </nav>
+	<section class="hot">
+    	<div class="hot-box">
+            <div>
+                <b></b><p>聚划算热卖排行</p><span>TOP10</span>
+            </div>
+        </div>
+        
+        <div class="hot-center">
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>1</span><img src="img/hare.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>2</span><img src="img/hare2.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>3</span><img src="img/hare3.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>4</span><img src="img/hare4.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>5</span><img src="img/hare5.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>6</span><img src="img/hare.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>7</span><img src="img/hare5.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>8</span><img src="img/hare2.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>9</span><img src="img/hare3.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+            <div class="matter1">
+                <div class="matter-left">
+                    <span>10</span><img src="img/hare4.png" alt=""/>
+                </div>
+                <div class="middle">
+                	<p style=" text-align:bottom;">已售 68423</p>
+                    <p style=" float:left;">2.3折</p><i>￥299</i>
+                </div>
+                <div class="matter-right">
+                	<p>￥51<b></b></p>
+                </div>
+            </div>
+       </div>
+    </section>
+	<section class="sptuan">
+    	<div class="sp-top">更多划算 逛起来!</div>
+        <div class="ps-center">
+        	<img src="img/below.png" alt=""/>
+            <div>
+                <ul>
+                    <li>服饰</li>
+                    <li>配饰</li>
+                    <li>美妆</li>
+                </ul>
+                <ul>
+                    <li>鞋包</li>
+                    <li>食品</li>
+                    <li>家居</li>
+                </ul>
+                <ul>
+                    <li>运动</li>
+                    <li>电器</li>
+                    <li>百货</li>
+                </ul>
+                <ul class="underneath">
+                    <li>母婴</li>
+                    <li>数码</li>
+                    <li>更多</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+	<section class="shtuan">
+    	<div class="location">
+            <div class="sp-top">精彩商品 逛起来!<b></b></div>
+            <div class="ps-center">
+                <img src="img/below2.png" alt=""/>
+                <div>
+                    <ul>
+                        <li>美食</li>
+                        <li>教育</li>
+                        <li>酒店</li>
+                    </ul>
+                    <ul>
+                        <li>电影</li>
+                        <li>生活服务</li>
+                        <li>卡券</li>
+                    </ul>
+                    <ul>
+                        <li>摄影</li>
+                        <li>粮油生鲜</li>
+                        <li>门票</li>
+                    </ul>
+                    <ul class="underneath">
+                        <li>休闲娱乐</li>
+                        <li>数码</li>
+                        <li>更多</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="shtuan2">
+    	<div class="location">
+            <div class="sp-top">品牌折扣 逛起来!<b></b></div>
+            <div class="ps-center">
+                <img src="img/below3.png" alt=""/>
+                <div>
+                    <ul>
+                        <li>七匹狼</li>
+                        <li>粉红...</li>
+                        <li>美妆</li>
+                    </ul>
+                    <ul>
+                        <li>鞋包</li>
+                        <li>食品</li>
+                        <li>家居</li>
+                    </ul>
+                    <ul>
+                        <li>运动</li>
+                        <li>电器</li>
+                        <li>百货</li>
+                    </ul>
+                    <ul class="underneath">
+                        <li>母婴</li>
+                        <li>数码</li>
+                        <li>更多</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="shtuan3">
+    	<div class="location">
+            <div class="sp-top">品质生活 逛起来!<b></b></div>
+            <div class="opinion">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><img src="img/client.png" width="40" height="44"alt=""/></a>
+                            <a href="javascript:;"><p>ios客户端</p></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/client2.png" width="40" height="44" alt=""/></a>
+                            <a href="javascript:;"><p>安卓客户端</p></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/client.png" width="40" height="44"alt=""/></a>
+                            <a href="javascript:;"><p>意见反馈</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<footer class="foot">
+    	<div class="foot-top">登录&nbsp;&nbsp;&nbsp;注册<b>TOP</b></div>
+        <div class="foot-bottom">
+        	<p>标准版&nbsp;&nbsp;&nbsp;电脑版</p>
+            <p class="foot-color">C2013 浙B2—20080224 &nbsp;服务中心</p>
+            <div>
+        		<img src="img/foot.png" width="519" height="180" alt=""/>
+            <div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
